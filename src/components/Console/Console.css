@@ -1,0 +1,21 @@
+.console {
+    margin-top: 10px;
+    background-color: #242424;
+    color: white;
+    padding: 10px;
+}
+
+.run_btn {
+    margin-top: 10px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: var(--dark);
+    outline: none;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.run_btn:hover {
+    color: var(--text);
+    background: var(--border);
+}

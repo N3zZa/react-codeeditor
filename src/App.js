@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import MainEditor from './components/MainEditor/MainEditor';
+import { python } from "@codemirror/lang-python";
+import Header from './components/Header/Header';
 
 function App() {
+  const [language, setLanguage] = useState(python); // Язык по умолчанию
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setLanguage={setLanguage} />
+      <main>
+      <MainEditor language={language} />
+      </main>
     </div>
   );
 }
