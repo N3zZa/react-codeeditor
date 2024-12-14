@@ -19,3 +19,6 @@
     color: var(--text);
     background: var(--border);
 }
+.console pre {
+    overflow-x: auto;
+}
