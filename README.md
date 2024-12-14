@@ -1,5 +1,7 @@
 Code editor app
 
+Редактора кода (аналог leetcode.com), где пользователь может писать код на одном из двух заданных языков (например, Go и Python), отправлять его «на сервер» (в данном случае используется API Piston) для выполнения и получения результатов.
+
 ## Available Scripts
 
 In the project directory, you can run:
